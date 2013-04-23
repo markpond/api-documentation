@@ -18,7 +18,7 @@ The endpoint for authorisation is
 
     https://markpond.com/oauth/authorize
     
-Then, initialize a client using the config we set up above:
+Then, initialise a client using the config we set up above:
 
 	client = OAuth2::Client.new(app_id, secret, site: "https://markpond.com/")
 	
@@ -29,7 +29,7 @@ To obtain the authorisation URL, run the `auth_code` method:
 	# If using Rails, now redirect the user
 	redirect_to redirect
 	
-The user will then go and choose whether or not to authorize your application.
+The user will then go and choose whether or not to authorise your application.
 
 If the user refuses to grant access to your application, they will be redirected to an URL similar to:
 
@@ -56,7 +56,7 @@ Use this flow for mobile or other native applications that need to be authorised
 
 First, gather the user's username and password. Note: you must not store them, as stated in the [API policy](https://markpond.com/developers/policy).
 
-The, we'll initialize a client:
+The, we'll initialise a client:
 
 	client = OAuth2::Client.new(app_id, secret, site: "https://markpond.com/")
 	
